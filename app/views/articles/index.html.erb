@@ -1,0 +1,26 @@
+<div class="jumbotron">
+    <div class="container">
+      <h1>몽주 집사의 업무일지</h1>
+    </div>
+</div> 
+<div class='write'>
+ <%= link_to '글 쓰러 가기!', new_article_path %>
+ </div>
+<table>
+ <tr>
+ <th>글 목록</th>
+ </tr>
+ <% @articles.each do |article| %>
+ <tr>
+ <div class='title'>
+ <td><%= link_to article.title, article_path(article) %></td>
+ </div>
+ <div class='editdelete'>
+ <td>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<%= link_to '수정', edit_article_path(article) %></td>
+ <td><%= link_to '삭제', article_path(article),
+ method: :delete,
+ data: { confirm: '삭제하시겠습니까?' } %></td>
+ </div>
+ </tr>
+ <% end %>
+</table>

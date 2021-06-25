@@ -1,0 +1,130 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron {
+    background-image: url(gectles.png); /* by.hokang */
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 300px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    background-color: #ffffff;
+    background-color: rgba( 255, 255, 255, 0.75 );
+    display: inline;
+    font-size: 80px;
+    padding: 20px;
+}
+
+.write {
+    text-align: right;
+    a {
+    text-decoration: none;
+    font-size: 40px;
+    padding: 5px;
+    }
+    
+    a:link {
+    color: #dba826;
+    }
+    
+    a:visited{
+    color: #dba826;
+    }
+}
+
+table {
+    th {
+        color: #dba826;
+        font-size: 30px;
+    }
+    
+    td {
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 5px;
+            }
+            
+            a:link {
+            color: black;
+            }
+            
+            a:visited{
+            color: black;
+            }
+    }
+}
+
+.newwrite {
+    
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        color: #dba826;
+    }
+}
+
+.form {
+    text-align: center;
+}
+
+.back {
+    text-align: center;
+    
+        a {
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px;
+        }
+        
+        a:link {
+        color: black;
+        }
+        
+        a:visited{
+        color: black;
+        }
+}
+
+.show {
+    padding: 30px;
+    
+    h1 {
+        color: #dba826;
+    }
+    
+    h2 {
+        color: #dba826;
+    }
+}
+
+.edit {
+    color: #dba826;
+    text-align: center;
+}
+
+.editback {
+    text-align: right;
+    
+    a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    }
+    
+    a:link {
+    color: black;
+    }
+    
+    a:visited{
+    color: black;
+    }
+}
