@@ -41,6 +41,10 @@ class ArticlesController < ApplicationController
         
         redirect_to articles_path
     end
+    
+    def main
+        render article_index_path
+    end
 
 private
     def article_params

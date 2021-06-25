@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   
+  get 'articles/main', to: 'articles#index'
+  
   resources :articles do
     resources :comments
   end
